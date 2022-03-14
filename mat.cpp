@@ -23,8 +23,8 @@ namespace ariel {
         // add the second char in jumps of 2 from the start and from the end as well 
         for(int i = 0; i < times; i++){
             
-            res_string[2*i + 1] = c2;
-            res_string[cols - 2*i - 2] = c2;
+            res_string.at(2*i + 1) = c2;
+            res_string.at(cols - 2*i - 2) = c2;
         }
         // return the new line after the changes
         return res_string;
@@ -44,8 +44,8 @@ namespace ariel {
         // add the first char in jumps of 2 from start and from the end as well
         for(int i = 0; i < times; i++){
             
-            res_string[2*i] = c1;
-            res_string[cols - 2*i - 1] = c1;
+            res_string.at(2*i) = c1;
+            res_string.at(cols - 2*i - 1) = c1;
         }
         // return the new line after the changes 
         return res_string;
